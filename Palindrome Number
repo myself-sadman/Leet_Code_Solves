@@ -1,0 +1,17 @@
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        string og,rev;
+        og=to_string(x);
+        rev=to_string(x);
+        reverse(rev.begin(),rev.end());
+
+        if(og==rev){
+            return true;
+        }
+        else{
+            return false;
+        }
+
+    }
+};
